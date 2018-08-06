@@ -1,4 +1,4 @@
-.navbar {
+ .navbar {
     overflow: hidden;
     background-color: white;
     position: fixed;
@@ -16,7 +16,7 @@
     padding: 15px 15px;
     text-decoration: none;
     color:#545454;
-}
+} 
 
 .hero-img {
 background-size: cover;
@@ -37,9 +37,10 @@ height: 500px;
     
 }
 
+/**
 .hero-title h1 {
     border-top: 1px dotted white;
-}
+} */
 
 
 .top-bot-border {
@@ -149,7 +150,7 @@ height: 500px;
 
 [tooltip]:before {
   bottom: 25%;
-  font-family: arial;
+  font-family: Ubuntu;
   font-weight: 600;
   border-radius: 2px;
   background: #585858;
