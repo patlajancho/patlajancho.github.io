@@ -17,58 +17,88 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Dancing+Script" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/w3schools.css">
+
+  <style>
+    .w3-bar-block .w3-bar-item {padding:20px}
+  </style>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
+  <!-- –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
 </head>
 <body>
-    
-    <!-- navbar
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <div class="u-full-width navbar">
-        <div class="container" style="background-color:white">
-                <a href="index.html"><img width="225" height="36" src="images/masterpiece_direct_logo.png"/></a>
-                <a href="store/c1/featured-products.html">Order</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="about-us.html">About us</a>
-                <a href="faq.html">FAQ</a>
-        </div>
+  <!-- Navbar (sit on top) -->
+<div style="font-family:Ubuntu; font-size:17px">
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide w3-hover-white"><img width="225" height="36" src="images/masterpiece_direct_logo.png"/></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="store/c1/featured-products.html" class="w3-bar-item w3-button w3-hover-white"> Order now</a>
+      <a href="gallery.html" class="w3-bar-item w3-button w3-hover-white"> Gallery</a>
+      <a href="about-us.html" class="w3-bar-item w3-button w3-hover-white"> About us</a>
+      <a href="faq.html" class="w3-bar-item w3-button w3-hover-white"> FAQ</a>
+      <a href="contact-us-html" class="w3-bar-item w3-button w3-hover-white"> Contact us</a>
     </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-    
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-hover-white" onclick="w3_open()">
+      <i class="fa fa-bars" style="font-size:32px; color:#474747"></i>
+    </a>
+  </div>
+</div>
 
-  <!-- Hero image
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-opacity-min w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none; opacity:50%" id="mySidebar">
+  <a href="index.html" class="w3-bar-item"><img height="57" width="57" src="images/favicon.png"></a>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16"> Close ×</a>
+  <a href="store/c1/featured-products.html" onclick="w3_close()" class="w3-bar-item w3-button"> Order now</a>
+  <a href="gallery.html" onclick="w3_close()" class="w3-bar-item w3-button"> Gallery</a>
+  <a href="about-us.html" onclick="w3_close()" class="w3-bar-item w3-button"> About us</a>
+  <a href="faq.html" onclick="w3_close()" class="w3-bar-item w3-button"> FAQ</a>
+  <a href="contact-us-html" onclick="w3_close()" class="w3-bar-item w3-button"> Contact us</a>
+</nav>
+</div>
 
-    <div class="u-full-width">
-        <div class="hero-img" style="background-image: url(images/hero.jpg)">
-        </div>
-    </div>
+<!-- Hero
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="hero-image" style="height:47px; color:white">
+</div>
 
-    
+<div class="hero-image">
+  <div class="hero-text">
+    <h1><font face = "Dancing Script">Privacy policy</font></h1>
+  </div>
+</div>
+
+
   <!-- article contents
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-   
-  <div class="container">    
+
+  <div class="container">
     <div class="ten columns">
         <h1 style="padding-top: 15px;">Privacy policy</h1>
         <p>At MasterpieceDirect, our staff and directors value the privacy of our customers - after all, we hate spam as much as you do.</p>
         <p>The MasterpieceDirect team ensure your experience is one that you will want to repeat and share with your friends. One part of our continued commitment to you is to respect and look after the privacy of your personal information. This Privacy Policy will inform you of what information we collect, why we collect it, and how we use it.</p>
         <p>Every time you submit to us your personal information you are providing us with your consent to the collection, use, and disclosure of your information as set forth in this Privacy Policy. If you have any questions relating to details of this privacy policy that are not outlined below, please feel free to send us an e-mail at <a href="mailto:masterpiecedirect@gmail.com">masterpiecedirect@gmail.com</a>.</p>
         <p>MasterpieceDirect may occasionally update this Privacy Policy. When a revision is made we will revise the "last updated" date on this page. We encourage you to check the date of our Privacy Policy each time you visit our Website for any updates or changes. Your use of our Website constitutes your consent to this Privacy Policy, including any changes or updates. We may make additional features, functionality, offers, activities, or events ("opportunities") available to you subject to additional or different privacy rules that we disclose in connection with those opportunities. Please be advised that your personal information may be made available, without your knowledge, to governments and their agencies in the UK, United States and in any other country where we or our service providers store or process your personal information, should they request it under a lawful order made in that country.</p>
-        
+
         <h2>Where and how your personal information is collected</h2>
         <p>It is not essential that you tell us who you are or reveal any personal information about yourself as you browse this Website. There are certain parts of the Website where you may choose to provide us with your personal information. When you do provide us with your personal information on our Website or via e-mail, we store this information on our secure systems. Personal information refers to any information that may be used to identify an individual, including, but not limited to: a first and last name, home, billing or other physical address, an e-mail address and any other information associated with the individual. Apart from your contact information, we may collect information about your purchases, billing address, shipping address, phone number or other contact information. We do not store credit card details nor do we share customer details with any 3rd parties. We may also further combine this information with information that is publicly available.</p>
-        
+
         <h2>How we use your personal data</h2>
         <p>All the information we collect via the Website or through correspondence with you is used to operate and improve the service we offer you and to personalise our service. We are committed to using your personal information only for:</p>
         <ul>
@@ -83,7 +113,7 @@
         </ul>
         <p>Additionally, we might upload photos of a completed artwork based on photos provided by you as sample on the Website. Please contact us if you want to remove a sample based on photographs provided by you.</p>
 
-        
+
         <h2>Other uses of your information</h2>
         <p>IP Address. When you visit our Website, MasterpieceDirect collects details of your IP address. This is done to help diagnose problems with our servers, analyse traffic trends, gather demographic information and track the date and duration of each session within our Website. Together with your personal information, your IP address may also be used to prevent fraud or abuse, customise your shopping experience, improve our website's design and usability, improve our customer service and to understand your preferences and interests.</p>
         <p>Data Collection Devices, such as Cookies and Tags: There are some instances where MasterpieceDirect may collect data through cookies, web logs, tags and other monitoring technologies to improve your browsing and shopping experience on our website. 'Cookies' are a piece of text stored on a user's computer through their web browser. It can be used for authentication, storing site preferences, shopping cart contents and the identifier for a server-based session. 'Tags' refers to code that is embedded in a web page or e-mail and is usually invisible to the user but allows checking that a user has viewed the page or e-mail.</p>
@@ -97,40 +127,41 @@
         <p>If the personally identifiable information MasterpieceDirect has gathered from you changes or you would like to access, correct, or delete such information, we will gladly assist you in doing so (to the extent allowed by law). To request a change or deletion of your data, please send an e-mail to <a href="mailto:masterpiecedirect@gmail.com">masterpiecedirect@gmail.com</a> with the details relating to your request.</p>
         <h2>Opt out</h2>
         <p>While we would like to keep in touch with all our clients we know that sometimes you prefer to keep your inbox free from any promotional material.</p>
-        <p>For this reason you can always opt-out of receiving e-mail promotions that we send you. To do this simply select "unsubscribe" on the subscription status page or at the bottom of any promotional e-mail received from us.</p>          
+        <p>For this reason you can always opt-out of receiving e-mail promotions that we send you. To do this simply select "unsubscribe" on the subscription status page or at the bottom of any promotional e-mail received from us.</p>
   </div>
 </div>
 
-    
-    
+
+
   <!-- footer
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    
+
 <div class="u-full-width footer">
     <div class="container">
 
-        <a href="faq.html">FAQ</a>  
-        
+        <a href="faq.html">FAQ</a>
+
         <a href="terms-and-conditions.html">Terms</a>
 
             <a href="privacy-policy.html">Privacy</a>
-    
-        
+
+
         <div class="row" style="font-size: 70%;margin-left:10px;color:#545454">
             <br>©
-            <script>var d = new Date();document.write(d.getFullYear());</script> 
+            <script>var d = new Date();document.write(d.getFullYear());</script>
             Masterpiecedirect.co.uk All Rights Reserved
             <br><br>
-            Masterpiecedirect.co.uk is operated as an independent sole trader business from Albena, Bulgaria. 
+            Masterpiecedirect.co.uk is operated as an independent sole trader business from Albena, Bulgaria.
         </div>
-           
+
     </div>
-    
+
 </div>
 
 
-    
 
+
+<script src="java-script/sidebar.js"></script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>

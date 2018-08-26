@@ -17,12 +17,14 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Dancing+Script" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="../../css/normalize.css">
   <link rel="stylesheet" href="../../css/skeleton.css">
   <link rel="stylesheet" href="../../css/custom.css">
+  <link rel="stylesheet" href="../../css/w3schools.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -37,36 +39,55 @@
   </script>
   <script charset="utf-8" src="//ucarecdn.com/libs/widget/3.6.0/uploadcare.full.min.js"></script>
 
+  <!-- –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
 </head>
 <body>
 
+  <!-- Navbar (sit on top) -->
+  <div style="font-family:Ubuntu; font-size:17px">
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="../../index.html" class="w3-bar-item w3-button w3-wide w3-hover-white"><img width="225" height="36" src="../../images/masterpiece_direct_logo.png"/></a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="../../store/c1/featured-products.html" class="w3-bar-item w3-button w3-hover-white"> » Order now</a>
+        <a href="../../gallery.html" class="w3-bar-item w3-button w3-hover-white"> Gallery</a>
+        <a href="../../about-us.html" class="w3-bar-item w3-button w3-hover-white"> About us</a>
+        <a href="../../faq.html" class="w3-bar-item w3-button w3-hover-white"> FAQ</a>
+        <a href="../../contact-us-html" class="w3-bar-item w3-button w3-hover-white"> Contact us</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-    <!-- navbar
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-    <div class="u-full-width navbar">
-        <div class="container" style="background-color:white">
-                <a href="../../index.html"><img width="225" height="36" src="../../images/masterpiece_direct_logo.png"/></a>
-                <a href="../../store/c1/featured-products.html">Order</a>
-                <a href="../../gallery.html">Gallery</a>
-                <a href="../../about-us.html">About us</a>
-                <a href="../../faq.html">FAQ</a>
-        </div>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-hover-white" onclick="w3_open()">
+        <i class="fa fa-bars" style="font-size:32px; color:#474747"></i>
+      </a>
     </div>
+  </div>
 
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-opacity-min w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none; opacity:50%" id="mySidebar">
+    <a href="../../index.html" class="w3-bar-item"><img height="57" width="57" src="../../images/favicon.png"></a>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16"> Close ×</a>
+    <a href="../../store/c1/featured-products.html" onclick="w3_close()" class="w3-bar-item w3-button"> » Order now</a>
+    <a href="../../gallery.html" onclick="w3_close()" class="w3-bar-item w3-button"> Gallery</a>
+    <a href="../../about-us.html" onclick="w3_close()" class="w3-bar-item w3-button"> About us</a>
+    <a href="../../faq.html" onclick="w3_close()" class="w3-bar-item w3-button"> FAQ</a>
+    <a href="../../contact-us-html" onclick="w3_close()" class="w3-bar-item w3-button"> Contact us</a>
+  </nav>
+  </div>
 
-
-  <!-- Hero image
+  <!-- Hero
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="hero-image" style="height:47px; color:white">
+  </div>
 
-    <div class="u-full-width">
-        <div class="hero-img" style="background-image: url(../../images/hero.jpg)">
-        </div>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1><font face = "Dancing Script">Art Store</font></h1>
     </div>
-
-
-
-
+  </div>
   <!-- article contents
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
@@ -77,8 +98,8 @@
 
         <h2>How to make an order?</h2>
           <h3>Just follow these 5 easy steps:</h3>
-          <li><strong>1. Choose your reference photos.</strong><br>The first thing you should do is to choose which photographs do you want our portrait artists to turn into an amazing pastel portrait. Don't forget that into a single portrat we could combine elements from different photos. What should your photos be like, what format should they be and the answers to many other questions you will find <a href="../../faq.html">here</a>. If you can't make the choice between a few different options, you could send us all of them and we will give you an advise which one is the best one to get turned into a pastel portrat.</li>
-          <li><strong>2. Send us your photographs and instructions via email.</strong><br>After you've chosen your pictures, send them to us via email. In your email, you should also write us detailed instructions about your portrait - if you have any preferences such as "I want this person to be on the left, and this one on the right", tell us now because chances are it will be way too late after we have already started working on your masterpiece. You can do that here:</li>
+          <li><strong>1. Choose your reference photos</strong><br>The first thing you should do is to choose which photographs do you want our portrait artists to turn into an amazing pastel portrait. Don't forget that into a single portrat we could combine elements from different photos. What should your photos be like, what format should they be and the answers to many other questions you will find <a href="../../faq.html">here</a>. If you can't make the choice between a few different options, you could send us all of them and we will give you an advise which one is the best one to get turned into a pastel portrat.</li>
+          <li><strong>2. Send us your photographs and instructions via email</strong><br>After you've chosen your pictures, send them to us via email. In your email, you should also write us detailed instructions about your portrait - if you have any preferences such as "I want this person to be on the left, and this one on the right", tell us now because chances are it will be way too late after we have already started working on your masterpiece. You can do that here:</li>
           <form method="POST" action="https://formspree.io/masterpiecedirect@gmail.com">
           <input type="email" name="name" placeholder="Your name"> <br>
           <input type="email" name="email" placeholder="Your email"> <br>
@@ -192,6 +213,7 @@
 
 
 
+<script src="../../java-script/sidebar.js"></script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>

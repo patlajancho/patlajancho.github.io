@@ -17,12 +17,14 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Dancing+Script" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="../../css/normalize.css">
   <link rel="stylesheet" href="../../css/skeleton.css">
   <link rel="stylesheet" href="../../css/custom.css">
+  <link rel="stylesheet" href="../../css/w3schools.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -37,35 +39,55 @@
   </script>
   <script charset="utf-8" src="//ucarecdn.com/libs/widget/3.6.0/uploadcare.full.min.js"></script>
 
+  <!-- –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
 </head>
 <body>
 
-
-    <!-- navbar
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-    <div class="u-full-width navbar">
-        <div class="container" style="background-color:white">
-                <a href="../../index.html"><img width="225" height="36" src="../../images/masterpiece_direct_logo.png"/></a>
-                <a href="../../store/c1/featured-products.html">Order</a>
-                <a href="../../gallery.html">Gallery</a>
-                <a href="../../about-us.html">About us</a>
-                <a href="../../faq.html">FAQ</a>
-        </div>
+  <!-- Navbar (sit on top) -->
+<div style="font-family:Ubuntu; font-size:17px">
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="../../index.html" class="w3-bar-item w3-button w3-wide w3-hover-white"><img width="225" height="36" src="../../images/masterpiece_direct_logo.png"/></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="../../store/c1/featured-products.html" class="w3-bar-item w3-button w3-hover-white"> » Order now</a>
+      <a href="../../gallery.html" class="w3-bar-item w3-button w3-hover-white"> Gallery</a>
+      <a href="../../about-us.html" class="w3-bar-item w3-button w3-hover-white"> About us</a>
+      <a href="../../faq.html" class="w3-bar-item w3-button w3-hover-white"> FAQ</a>
+      <a href="../../contact-us-html" class="w3-bar-item w3-button w3-hover-white"> Contact us</a>
     </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-hover-white" onclick="w3_open()">
+      <i class="fa fa-bars" style="font-size:32px; color:#474747"></i>
+    </a>
+  </div>
+</div>
 
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-opacity-min w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none; opacity:50%" id="mySidebar">
+  <a href="../../index.html" class="w3-bar-item"><img height="57" width="57" src="../../images/favicon.png"></a>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16"> Close ×</a>
+  <a href="../../store/c1/featured-products.html" onclick="w3_close()" class="w3-bar-item w3-button"> » Order now</a>
+  <a href="../../gallery.html" onclick="w3_close()" class="w3-bar-item w3-button"> Gallery</a>
+  <a href="../../about-us.html" onclick="w3_close()" class="w3-bar-item w3-button"> About us</a>
+  <a href="../../faq.html" onclick="w3_close()" class="w3-bar-item w3-button"> FAQ</a>
+  <a href="../../contact-us-html" onclick="w3_close()" class="w3-bar-item w3-button"> Contact us</a>
+</nav>
+</div>
 
-  <!-- Hero image
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- Hero
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="hero-image" style="height:47px; color:white">
+</div>
 
-    <div class="u-full-width">
-        <div class="hero-img" style="background-image: url(../../images/hero.jpg)">
-        </div>
-    </div>
-
-
-
+<div class="hero-image">
+  <div class="hero-text">
+    <h1><font face = "Dancing Script">Art Store</font></h1>
+  </div>
+</div>
 
   <!-- article contents
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -73,14 +95,12 @@
 <div class="container article-content">
     <div class="ten columns">
       <h1><font face = "Dancing Script">Welcome to our art store</font></h1>
-        <p>Turn your favourite photos to handmade pastel portraits. Our Master Artists specialise in portraits from photographs. A pastel portrait makes a unique handmade gift for your loved ones.</p>
+        <p>Turn your favourite photos to amazing handmade pastel portraits. To do this, just follow these 5 easy steps:</p>
 
-        <h2>How to make an order?</h2>
-          <h3>Just follow these 5 easy steps:</h3>
-          <li><strong>1. Choose your reference photos.</strong><br>The first thing you should do is to choose which photographs do you want our portrait artists to turn into an amazing pastel portrait. Don't forget that into a single portrat we could combine elements from different photos. What should your photos be like, what format should they be and the answers to many other questions you will find <a href="../../faq.html">here</a>. If you can't make the choice between a few different options, you could send us all of them and we will give you an advise which one is the best one to get turned into a pastel portrat.</li>
-          <li><strong>2. Send us your photographs and instructions via email.</strong><br>After you've chosen your pictures, send them to us via email. In your email, you should also write us detailed instructions about your portrait - if you have any preferences such as "I want this person to be on the left, and this one on the right", tell us now because chances are it will be way too late after we have already started working on your masterpiece. You can do that here:</li>
+          <li><strong>1. Choose your reference photos</strong><br>The first thing you should do is to choose which photographs do you want our portrait artists to turn into an amazing pastel portrait. Don't forget that into a single portrat we could combine elements from different photos. What should your photos be like, what format should they be and the answers to many other questions you will find <a href="../../faq.html">here</a>. If you can't make the choice between a few different options, you could send us all of them and we will give you an advise which one is the best one to get turned into a pastel portrat.</li>
+          <li><strong>2. Send us your photographs and instructions via email</strong><br>After you've chosen your pictures, send them to us via email. In your email, you should also write us detailed instructions about your portrait - if you have any preferences such as "I want this person to be on the left, and this one on the right", tell us now because chances are it will be way too late after we have already started working on your masterpiece. You can do that here:</li>
           <form method="POST" action="https://formspree.io/masterpiecedirect@gmail.com">
-          <input type="email" name="name" placeholder="Your name"> <br>
+          <input type="text" name="name" placeholder="Your name"> <br>
           <input type="email" name="email" placeholder="Your email"> <br>
           <textarea name="message" placeholder="Your message"></textarea> <br>
           <input type="hidden" role="uploadcare-uploader" name="content"
@@ -89,7 +109,7 @@
           <button type="submit">Send</button>
           </form>
           <p>Within a day, we will contact you and tell you if the pictures are good for a portrait.</p>
-          <li><strong>3. Payment</strong><br>After we have sent you an email, confirming that we are ready to start working on your personal masterpiece, you just have to pay. You can do this either by Paypal or debit/credit card. Click here to view our price list.<br> We will get notified that you have paid and as soon as we do, we will begin working on your order.</li>
+          <li><strong>3. Payment</strong><br>After we have sent you an email, confirming that we are ready to start working on your personal masterpiece, you just have to pay. You can do this either by Paypal or debit/credit card (scroll down). Click here to view our price list.<br> We will get notified that you have paid and as soon as we do, we will begin working on your order.</li>
           <li><strong>4. Review</strong><br>It usually takes us from 2 to 7 days to draw your portrait. However, it depends on a few things - how busy we are at the moment of the order, will the portrait be in Black and White or in Colour, if it's a single or a family portrat, etc. Once the painting from your photo is ready, we will contact you to review it online. Most of our customers are happy with their first preview. If you feel that any modifications should be made, we receive your feedback, make the requested modifications and send it back to you for confirmation. Only then is the custom painting is sent to you.</li>
           <li><strong>5. Recieve</strong><br>Your masterpiece will be packaged carefully and shipped to you via courier in a secure custom made box. We will be able to give you more details about delivering once you have placed your order.</li>
 
@@ -146,18 +166,6 @@
             </div>
             </div>
         </div>
-
-        <p>Once you've placed an order, we will work closely with you to gather reference photos via email. Please send us your photos and instructions to <a href="mailto:masterpiecedirect@gmail.com">masterpiecedirect@gmail.com</a></p>
-        <p>Additionally, you can ask us what would be the best medium for the photos that you have provided. For example, some photos are best suited for black & white pastel while others work better with colour pastels.</p>
-        <p>We are professional portrait artists with extensive experience in the portrait art. All portraits are handcrafted to perfection using only the finest of pastels and special Canson paper.</p>
-
-      <h3>Delivery</h3>
-        <p>Typically it takes between 2 and 3 weeks from placing an order to receiving your portrait, depending on the capacity of our artists. We will try our best to keep this indicative timeframe.</p>
-      <h3>Portrait Size</h3>
-        <p>The size of the portraits may vary up to a maximum size of 50x65 cm (20x25 inches) depending on the reference photos. As a rule of thumb, our artists will draw paintings whereby the head/shoulders of the characters are real life sized.</p>
-        <h3>Got a question?</h3>
-        <p>Please get in touch and email us at <a href="mailto:masterpiecedirect@gmail.com">masterpiecedirect@gmail.com</a></p>
-
     </div>
 
 
@@ -192,6 +200,7 @@
 
 
 
+<script src="../../java-script/sidebar.js"></script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>

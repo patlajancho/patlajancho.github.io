@@ -17,58 +17,84 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Dancing+Script" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/w3schools.css">
+
+  <style>
+    .w3-bar-block .w3-bar-item {padding:20px}
+  </style>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
+  <!-- –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
 </head>
 <body>
-    
-    <!-- navbar
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-    <div class="u-full-width navbar">
-        <div class="container" style="background-color:white">
-                <a href="index.html"><img width="225" height="36" src="images/masterpiece_direct_logo.png"/></a>
-                <a href="store/c1/featured-products.html">Order</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="about-us.html">About us</a>
-                <a href="faq.html">FAQ</a>
-        </div>
+  <!-- Navbar (sit on top) -->
+<div style="font-family:Ubuntu; font-size:17px">
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide w3-hover-white"><img width="225" height="36" src="images/masterpiece_direct_logo.png"/></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="store/c1/featured-products.html" class="w3-bar-item w3-button w3-hover-white"> Order now</a>
+      <a href="gallery.html" class="w3-bar-item w3-button w3-hover-white"> Gallery</a>
+      <a href="about-us.html" class="w3-bar-item w3-button w3-hover-white"> About us</a>
+      <a href="faq.html" class="w3-bar-item w3-button w3-hover-white"> FAQ</a>
+      <a href="contact-us-html" class="w3-bar-item w3-button w3-hover-white"> Contact us</a>
     </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-    
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-hover-white" onclick="w3_open()">
+      <i class="fa fa-bars" style="font-size:32px; color:#474747"></i>
+    </a>
+  </div>
+</div>
 
-  <!-- Hero image
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-opacity-min w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none; opacity:50%" id="mySidebar">
+  <a href="index.html" class="w3-bar-item"><img height="57" width="57" src="images/favicon.png"></a>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16"> Close ×</a>
+  <a href="store/c1/featured-products.html" onclick="w3_close()" class="w3-bar-item w3-button"> Order now</a>
+  <a href="gallery.html" onclick="w3_close()" class="w3-bar-item w3-button"> Gallery</a>
+  <a href="about-us.html" onclick="w3_close()" class="w3-bar-item w3-button"> About us</a>
+  <a href="faq.html" onclick="w3_close()" class="w3-bar-item w3-button"> FAQ</a>
+  <a href="contact-us-html" onclick="w3_close()" class="w3-bar-item w3-button"> Contact us</a>
+</nav>
+</div>
+  <!-- Hero
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="hero-image" style="height:47px; color:white">
+  </div>
 
-    <div class="u-full-width">
-        <div class="hero-img" style="background-image: url(images/hero.jpg)">
-        </div>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1><font face = "Dancing Script">Terms and conditions</font></h1>
     </div>
-
-    
+  </div>
   <!-- article contents
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-   
-  <div class="container">    
+
+  <div class="container">
     <div class="ten columns">
         <h1 style="padding-top: 15px;">Terms and conditions</h1>
         <p>By using http://www.masterpiecedirect.co.uk (the “Website”) you accept these terms and conditions (the “Terms”) regardless of whether or not you choose to place an order with us. If you do not accept the Terms, please do not use the Website.</p>
-        
+
         <h2>Introduction</h2>
         <p>You will be able to access most areas of the Website without providing any of your details to us. However, certain areas of the Website will require information provided by you, such as our order process, which may require you to upload a photo or provide other details prior to placing an order.</p>
-        
+
         <p>We may revise the Terms at any time by updating this posting. You should check the Website from time to time to review the current Terms, because they are binding on you. Certain provisions of the Terms may be superseded by expressly designated legal notices or terms located on particular pages of the Website. If you do not wish to accept any new terms and conditions after we have given notice, you should not continue to use the Website.</p>
-        
-        
+
+
         <h2>Placing an order</h2>
         <p>You are deemed to place an order with us by ordering via our online checkout process. We will send you an order confirmation by email, detailing the specifications of the product(s) you have ordered.</p>
         <p>For products that are not personalised, our acceptance of an order takes place when we despatch the products. When we despatch the products the purchase contract will be made even if your payment has been processed immediately, unless we have notified you that we do not accept your order or you have cancelled your order.</p>
@@ -83,11 +109,11 @@
             <li> If the order is to be delivered outside of the territories to which we deliver; and</li>
             <li>If your order for personalised products contains content which is threatening, defamatory, obscene, indecent, seditious, offensive, pornographic, abusive, liable to incite racial hatred, discriminatory, menacing, scandalous, inflammatory, blasphemous, in breach of confidence, in breach of privacy or which may cause annoyance or inconvenience.</li>
         </ul>
-        
+
         <h2>Pricing</h2>
         <p>Prices for all products listed on the Website are inclusive of VAT where applicable in the context of current UK laws and regulations. We do not show prices exclusive of VAT anywhere on the Website.</p>
         <p>Where we charge separately for packing, postage or insurance and other relevant charges, the appropriate rates are set out in our specified pricing structure shown elsewhere on the Website.</p>
-        
+
         <h2>Delivery</h2>
         <p>We will deliver the Products ordered by you to the address which you give for delivery when you place your order. If any of the details you have given us in your delivery address are incorrect, we are not liable for any items which have not been received.</p>
         <p>You may specify a delivery address which is different from your billing address, if, for example, you would like us to deliver the Products directly to a friend, a relative, or to your place of work.</p>
@@ -102,7 +128,7 @@
             <li>Standard delivery: 14 working days from date of despatch</li>
             <li>Express delivery: 10 working days from date of despatch</li>
         </ul>
-        
+
         <h2>Order cancellations</h2>
         <p>For most items, you have the legal right to cancel your order within 7 working days of receiving the goods. However, this does not apply to certain items which we have made, personalised or customised specifically for you.</p>
         <p>Order cancellations must be made in writing, quoting your order number, within 7 working days beginning the day after the day on which the item is delivered.</p>
@@ -131,24 +157,24 @@
             <li>Work you ordered does not present the artistic style of the commission sample you selected and you notify us of the problem via our quality assurance page or the message through which we deliver your final work of art within 48 hours of your work’s delivery.</li>
             <li>Work you ordered does not feature the same level of detail or quality shown in the commission sample you selected and you notify us of the problem via email.</li>
         </ul>
-        
+
         <h2>Discounts</h2>
         <p>If a discount was applied to your original order, the amount refunded will be adjusted to allow for the revised order value and appropriate discount level. Please note you can only use one discount code per order.</p>
-        
+
         <h2>I received the wrong item</h2>
         <p>If the item you received is not what you originally ordered, please contact us quoting your order number, your name and address, details of the product and the reason for return, and whether you require a refund or a replacement. We will then advise on how to proceed with the return.</p>
-        
+
         <p>Photo Upload</p>
         <p>In using the Photo Upload facility on the Website, you agree not to upload or print any images that will cause distress or offence to any person. It is your responsibility to ensure that express permission for any images you use has been granted by the owner of any image. MasterpieceDirect reserves the right to refuse to process any order that may cause offence or distress to others – in such a case we will refund any payment made. MasterpieceDirect will not be responsible for any copyright infringement by the customer.</p>
-        
+
        <h2>Licence</h2>
-        
+
         <p>The Website and all its related content and images, including but not limited to: the MasterpieceDirect logo, all designs, text, graphics, pictures, the look and feel of the site, information, data, software, video files and other files (collectively referred to as the 'site materials') are the proprietary property of MasterpieceDirect and are protected by trade dress, copyright, trademark laws and various other intellectual property rights and unfair competition laws.</p>
         <p>You may retrieve and display the content of the Website on a computer screen, store such content in electronic form on disk (but not any server or other storage device connected to a network) or print one copy of such content for your own personal, non-commercial use, provided you keep intact all and any copyright and proprietary notices. You may not otherwise reproduce, modify, copy or distribute or use for commercial purposes any of the materials or content on the Website without written permission from us.</p>
         <p>Unless otherwise stated, the copyright and other intellectual property rights in all material on the Website (including without limitation photographs and graphical images) are owned by us or our artists. For the purposes of the Terms, any use of extracts from the Website other than in accordance with the clause above for any purpose is prohibited. If you breach any of the terms in the Terms, your permission to use the Website automatically terminates and you must immediately destroy any downloaded or printed extracts from the Website. </p>
         <p>No part of the Website may be reproduced or stored in any other website or included in any public or private electronic retrieval system or service without our prior written permission. </p>
         <p>Any rights not expressly granted in these terms are reserved.</p>
-        
+
         <h2>Service Access</h2>
         <p>While we endeavour to ensure that the Website is normally available 24 hours a day, we will not be liable if for any reason the Website is unavailable at any time or for any period. </p>
         <p>Access to the Website may be suspended temporarily and without notice in the case of system failure, maintenance or repair or for reasons beyond our control.</p>
@@ -167,36 +193,37 @@
   </div>
 </div>
 
-    
-    
+
+
   <!-- footer
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    
+
 <div class="u-full-width footer">
     <div class="container">
 
-        <a href="faq.html">FAQ</a>  
-        
+        <a href="faq.html">FAQ</a>
+
         <a href="terms-and-conditions.html">Terms</a>
 
             <a href="privacy-policy.html">Privacy</a>
-    
-        
+
+
         <div class="row" style="font-size: 70%;margin-left:10px;color:#545454">
             <br>©
-            <script>var d = new Date();document.write(d.getFullYear());</script> 
+            <script>var d = new Date();document.write(d.getFullYear());</script>
             Masterpiecedirect.co.uk All Rights Reserved
             <br><br>
-            Masterpiecedirect.co.uk is operated as an independent sole trader business from Albena, Bulgaria. 
+            Masterpiecedirect.co.uk is operated as an independent sole trader business from Albena, Bulgaria.
         </div>
-           
+
     </div>
-    
+
 </div>
 
 
-    
 
+
+<script src="java-script/sidebar.js"></script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
