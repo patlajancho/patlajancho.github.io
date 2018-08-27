@@ -35,6 +35,7 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/w3schools.css">
+  <link rel="stylesheet" href="lightbox/lightbox.css">
 
   <style>
     .w3-bar-block .w3-bar-item {padding:20px}
@@ -94,11 +95,16 @@
     </div>
   </div>
 
-  <!-- article contents
+  <!-- Updated gallery
+  lightbox2 v.2.6 - Copyright (c) 2015 Lokesh Dhakar
+  https://lokeshdhakar.com/
+  https://raw.githubusercontent.com/lokesh/lightbox2/master/LICENSE
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <div class="container article-content">
     <div class="twelve columns">
+      <p><i>Click on an image to enlarge it.</i></p>
+
       <h2><font face = "Dancing Script">Your beloved pets</font></h2>
 
         <p>You can turn photos of your furry friends into amazing artwork.</p>
@@ -126,7 +132,7 @@
           </div>
 
           <div class="four columns">
-                  <a href="images/pets/cat-2.jpg" data-lightbox="pets" data-title=""><img src="images/pets/cat-2.jpg" style="width: 100%;height:auto;"/></a>
+                  <a href="images/pets/dog-9.jpg" data-lightbox="pets" data-title=""><img src="images/pets/dog-9-thumbnail.jpg" style="width: 100%;height:auto;"/></a>
           </div>
 
           <div class="four columns">
@@ -170,22 +176,6 @@
         <div class="row">
 
           <div class="four columns">
-                  <a href="images/pets/dog-9.jpg" data-lightbox="pets" data-title=""><img src="images/pets/dog-9.jpg" style="width: 100%;height:auto;"/></a>
-          </div>
-
-          <div class="four columns">
-                  <a href="images/pets/dog-8.jpg" data-lightbox="pets" data-title=""><img src="images/pets/dog-8.jpg" style="width: 100%;height:auto;"/></a>
-          </div>
-
-          <div class="four columns">
-                  <a href="images/pets/dog-7.jpg" data-lightbox="pets" data-title=""><img src="images/pets/dog-7.jpg" style="width: 100%;height:auto;"/></a>
-          </div>
-
-        </div>
-
-        <div class="row">
-
-          <div class="four columns">
                   <a href="images/pets/dogs-2.jpg" data-lightbox="pets" data-title=""><img src="images/pets/dogs-2.jpg" style="width: 100%;height:auto;"/></a>
           </div>
 
@@ -196,14 +186,18 @@
           <div class="four columns">
                   <a href="images/pets/dogs-3.jpg" data-lightbox="pets" data-title=""><img src="images/pets/dogs-3.jpg" style="width: 100%;height:auto;"/></a>
           </div>
-
         </div>
-
-
     </div>
-
-
 </div>
+
+<!-- Lightbox
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="lightbox/lightbox-plus-jquery.js"></script>
+<script>
+  lightbox.option({
+    'wrapAround': true
+  })
+</script>
 
 
 
