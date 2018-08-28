@@ -62,13 +62,12 @@
 
   <!-- Load Facebook SDK for JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/bg_BG/sdk.js#xfbml=1&version=v3.1" ;
+    js.src = 'https://connect.facebook.net/bg_BG/sdk.js#xfbml=1&version=v3.1';
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
 
@@ -130,7 +129,14 @@
           <strong>Email:</strong> <a href="mailto:masterpiecedirect@gmail.com">masterpiecedirect@gmail.com</a><br>
           <strong>Instagram:</strong> <a href="https://www.instagram.com/masterpiecedirect/">@masterpiecedirect</a><br>
           <strong>Facebook page:</strong> <a href="https://www.facebook.com/masterpiecedirect/">MasterpieceDirect</a><br><br>
-          <p>To stay informed about future promotions and offers, like our Facebook page and follow us on Instagram. We would truly appreciate it if you spread the word about us by sharing us with your friends:</p>
+          <p>To stay informed about future promotions and offers, like our Facebook page and follow us on Instagram. We would truly appreciate it if you spread the word about us by sharing us with your friends.</p>
+          <script>
+            result.show();
+            var like_box = $(".fb-like-inactive", result);
+            like_box.removeClass("fb-like-inactive");
+            like_box.addClass("fb-like");
+            FB.XFBML.parse();
+          </script>
           <div class="fb-like" data-href="https://web.facebook.com/masterpiecedirect/" data-layout="standard" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
         </div>
         <div class="one columns">
@@ -139,12 +145,12 @@
         <div class="four columns">
           <h1><font face = "Dancing Script">Contact form</font></h1>
           <form method="POST" action="https://formspree.io/masterpiecedirect@gmail.com">
-          <p>Your name: <br>
-          <input type="text" name="name" placeholder="Name"></p>
-          <p>Your e-mail: <br>
-          <input type="email" name="email" placeholder="E-mail"></p>
-          <p>Your message: <br>
-          <textarea name="message" placeholder="Type here..."></textarea></p>
+          <p><input type="text" name="name" placeholder="Your name">
+          <br></p>
+          <p><input type="email" name="email" placeholder="Your e-mail">
+          <br></p>
+          <p><textarea name="message" placeholder="Your message"></textarea>
+          <br></p>
           <input type="hidden" role="uploadcare-uploader" name="content"
           data-images-only="true"
           data-multiple="true" /> <br><br>
