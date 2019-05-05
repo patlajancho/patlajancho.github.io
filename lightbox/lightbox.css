@@ -13,7 +13,7 @@ html.lb-disable-scrolling {
   z-index: 9999;
   background-color: black;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-  opacity: 0.8;
+  opacity: 0.96;
   display: none;
 }
 
@@ -24,7 +24,6 @@ html.lb-disable-scrolling {
   z-index: 10000;
   text-align: center;
   line-height: 0;
-  font-weight: normal;
 }
 
 .lightbox .lb-image {
@@ -32,10 +31,11 @@ html.lb-disable-scrolling {
   height: auto;
   max-width: inherit;
   max-height: none;
-  border-radius: 3px;
+  border-radius: 4px;
 
   /* Image border */
-  border: 4px solid white;
+  border: 0px solid white;
+  box-shadow: 0px 13px 17px 0px rgba(0, 0, 0, 1);
 }
 
 .lightbox a img {
@@ -52,7 +52,7 @@ html.lb-disable-scrolling {
 
   /* Background color behind image.
      This is visible during transitions. */
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 .lb-outerContainer:after {
@@ -76,7 +76,6 @@ html.lb-disable-scrolling {
   width: 32px;
   height: 32px;
   margin: 0 auto;
-  background: url(../images/loading.gif) no-repeat;
 }
 
 .lb-nav {
@@ -167,9 +166,10 @@ html.lb-disable-scrolling {
 }
 
 .lb-data .lb-caption {
-  font-size: 13px;
-  font-weight: bold;
+  font-size: 16px;
   line-height: 1em;
+  font-family: courier-std, monospace;
+  font-style: normal;
 }
 
 .lb-data .lb-caption a {
@@ -188,12 +188,12 @@ html.lb-disable-scrolling {
   display: block;
   float: right;
   width: 30px;
-  height: 30px;
+  height: 45px;
   background: url(../images/close.png) top right no-repeat;
   text-align: right;
   outline: none;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
-  opacity: 0.7;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   -o-transition: opacity 0.2s;
