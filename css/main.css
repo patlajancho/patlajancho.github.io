@@ -58,6 +58,9 @@ h3 {
     font-style: normal;
 }
 
+.navbar {
+  font-weight: 600;
+}
 
 @media only screen and (min-width: 950px){
     .navbar-expand-custom {
@@ -310,7 +313,7 @@ nav ul li a:hover {
 }
 
 .card-shadow-low {
-  box-shadow: 0px 27px 40px 0px rgba(0, 0, 0, 0.20);
+  box-shadow: 0px 27px 40px 0px rgba(230, 51, 54, 0.3);
 }
 
 .top-shadow-black {
@@ -1160,6 +1163,18 @@ label:hover:before {
 
 @media only screen and (min-width: 717px){
   #boo-sm {
+  display: none;
+}
+}
+
+@media only screen and (max-width: 774.99px){
+  #services-lg {
+    display: none;
+}
+}
+
+@media only screen and (min-width: 775px){
+  #services-sm {
   display: none;
 }
 }

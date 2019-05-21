@@ -51,10 +51,10 @@
   height: 0;
   overflow: hidden;
   position: relative;
-  -webkit-transition: .4s ease;
-  -moz-transition: .4s ease;
-  -o-transition: .4s ease;
-  transition: .4s ease;
+  -webkit-transition: .9s ease;
+  -moz-transition: .9s ease;
+  -o-transition: .9s ease;
+  transition: .9s ease;
 }
 
 .panel:checked ~ .panel-content{
@@ -76,10 +76,10 @@
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
-  -webkit-transition: .2s ease;
-  -moz-transition: .2s ease;
-  -o-transition: .2s ease;
-  transition: .2s ease;
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease;
 }
 
 .panel:checked ~ .plus {
