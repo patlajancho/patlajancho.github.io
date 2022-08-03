@@ -1,21 +1,60 @@
-<br>
-  <div class="container" style="items-align: center; margin-left: 10px; margin-right: 10px;">
-      <div id="tripetto-2"></div>
-      <script src="https://cdn.jsdelivr.net/npm/tripetto-runner-foundation"></script>
-      <script src="https://cdn.jsdelivr.net/npm/tripetto-runner-autoscroll"></script>
-      <script src="https://cdn.jsdelivr.net/npm/tripetto-services"></script>
-      <script>
-      var tripetto = TripettoServices.init({ token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiSmtaRlVlMWpsL0h0QUtGWHJqSWlFYUIwZmhjZWxucGdqbnVkTytkNkV4RT0iLCJkZWZpbml0aW9uIjoiTmZWaCtmeFhGTDVLbTRzdEZSd25qTEw5eHI1MnUwRTM2eGh4dTU4VDdsaz0iLCJ0eXBlIjoiY29sbGVjdCJ9.-v-OiYhTy_o3mvIONyZG8K3hyGdk46IF0R9xSx6c31E" });
+<html lang="en">
+<head>
 
-      TripettoAutoscroll.run({
-          element: document.getElementById("tripetto-2"),
-          definition: tripetto.definition,
-          styles: tripetto.styles,
-          l10n: tripetto.l10n,
-          locale: tripetto.locale,
-          translations: tripetto.translations,
-          attachments: tripetto.attachments,
-          onSubmit: tripetto.onSubmit,
-          customCSS: "svg { fill: rgb(0,0,0,0) !important; } div {font-weight: 500 !important;} h2 span { font-family: 'Poppins' !important; font-weight: 500 !important; } .sc-bczRLJ { font-family: 'Noto Serif JP' !important; color: #3bc4c4 !important; } .cDqrPO > small { color: white !important; } max-height: 100px; .dEcdyF { opacity: .0 !important; } .llvMLb > div > div { background-color: #f2f2f2 !important; border-radius: 0px !important; } .cNixde > div > div { background-color: #3bc4c4 !important; background-image: linear-gradient(rgba(59, 196, 196, 1), rgba(59, 196, 196, 1)) !important; } .cNixde > span {opacity: 0 !important;} .hiosfO {border-color: #d9d9d9 !important; background-color: #f2f2f2 !important;} .hDhUFE {min-width: 150px !important; background-color: #d9d9d9 !important; color: black !important; border-color: #bfbfbf !important;} .bExgQa {max-width: 500px !important;} .imVhnU {border-radius: 0px !important;}"
-      });
-      </script></div>
+  <script src="https://unpkg.com/tripetto"></script>
+    <!-- Load some blocks -->
+    <script src="https://unpkg.com/tripetto-block-file-upload"></script>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- basic page needs -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+
+    <!-- mobile specific metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- mobile browser colour theme -->
+    <meta content="--NL-Blue" name="theme-color"/>
+    <meta content="--NL-Blue" name="msapplication-navbutton-color">
+
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="--NL-Blue" name="apple-mobile-web-app-status-bar-style">
+
+    <!-- page title + description-->
+  	<title>Erised | The Smart Mirror.</title>
+  	<meta name="description" content="Reimagining what a mirror can do.">
+
+    <!-- Bootstrap 4.2 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="css/main2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- AOS for scroll animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- FontAwesome icons -->
+    <script src="https://use.fontawesome.com/e81c9eabff.js"></script>
+</head>
+<body style="margin-left: 5px; margin-right: 5px">
+  <script src="https://cdn.jsdelivr.net/npm/tripetto-runner-foundation"></script>
+<script src="https://cdn.jsdelivr.net/npm/tripetto-runner-autoscroll"></script>
+<script src="https://cdn.jsdelivr.net/npm/tripetto-services"></script>
+<script>
+var tripetto = TripettoServices.init({ token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiSmtaRlVlMWpsL0h0QUtGWHJqSWlFYUIwZmhjZWxucGdqbnVkTytkNkV4RT0iLCJkZWZpbml0aW9uIjoiTmZWaCtmeFhGTDVLbTRzdEZSd25qTEw5eHI1MnUwRTM2eGh4dTU4VDdsaz0iLCJ0eXBlIjoiY29sbGVjdCJ9.-v-OiYhTy_o3mvIONyZG8K3hyGdk46IF0R9xSx6c31E" });
+
+TripettoAutoscroll.run({
+    element: document.body, /* Or supply your own element here */
+    definition: tripetto.definition,
+    styles: tripetto.styles,
+    l10n: tripetto.l10n,
+    locale: tripetto.locale,
+    translations: tripetto.translations,
+    attachments: tripetto.attachments,
+    onSubmit: tripetto.onSubmit,
+    customCSS: "svg { fill: rgb(0,0,0,0) !important; } div {font-weight: 500 !important;} h2 span { font-family: 'Poppins' !important; font-weight: 500 !important; } .sc-bczRLJ { font-family: 'Noto Serif JP' !important; color: #3bc4c4 !important; } .cDqrPO > small { color: white !important; } max-height: 100px; .dEcdyF { opacity: .0 !important; } .llvMLb > div > div { background-color: #f2f2f2 !important; border-radius: 0px !important; } .cNixde > div > div { background-color: #3bc4c4 !important; background-image: linear-gradient(rgba(59, 196, 196, 1), rgba(59, 196, 196, 1)) !important; } .cNixde > span {opacity: 0 !important;} .hiosfO {border-color: #d9d9d9 !important; background-color: #f2f2f2 !important;} .hDhUFE {min-width: 150px !important; background-color: #d9d9d9 !important; color: black !important; border-color: #bfbfbf !important;} .bExgQa {max-width: 400px !important;} .imVhnU {border-radius: 0px !important;}"
+});
+</script>
+</body>
