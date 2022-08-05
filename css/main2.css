@@ -230,7 +230,7 @@ nav {
   nav {
     background: rgba(255, 255, 255, 0.93) !important;
     backdrop-filter: blur(3px);
-    -webkit- backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
   }
 }
 
