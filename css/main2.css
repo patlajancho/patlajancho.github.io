@@ -141,9 +141,9 @@ html {
 
 /* poppins-600 - latin */
 @font-face {
-  font-family: 'Poppins';
+  font-family: 'Noto Serif JP';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 800;
   src: url('../fonts/poppins-v20-latin-600.eot'); /* IE9 Compat Modes */
   src: local(''),
        url('../fonts/poppins-v20-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
