@@ -490,18 +490,11 @@ greeting_dialog_delay="2">
     </small>
     <br>
    <br>
-    <label for="subjects"> Import your reference photos here</label><br><br>
-    <p class="uploader-red-button uploader-red-circle">
-      <input type="hidden" class="form-check-input" role="uploadcare-uploader" name="content"
-      data-images-only="true"
-      data-multiple="true" data-clearable="true" required/>
-    </p>
-    <div style="line-height:50%;"><br></div>
-    <small class="form-text text-muted">
-        <a data-toggle="tooltip" class="gray-tooltip" data-html="true" title="<br> Click the button above and either <i>drag-and-drop</i> the pictures you have chosen or click the <i>Choose a local file</i> button and upload them. <br><br> Then, if you want to import more images, on the menu on the left click the File icon. <br><br>">
-        <i class="fas fa-info-circle" style="opacity:0.4"></i>&nbsp;How do I upload images?<br>
-        </a>
-    </small>
+    <label class="file-button" for="file-upload">Import your reference photos here.</label>
+    <small><br>The Artists will use them for painting your portrait.</small><br><br>
+    <input id="file-upload" type="file" name="attachment" accept="image/*" multiple>
+
+    <br><br>
     <br>
     <div class="form-check">
       <input type="checkbox" class="form-check-input" name="help-me-choose-photos" id="help-me-choose-photos" aria-describedby="help-me-choose-photos-block">
@@ -558,6 +551,8 @@ greeting_dialog_delay="2">
     <br>
     <button class="btn bottom-shadow-black btn-dark btn-md" type="submit">COMMISSION MY PORTRAIT</button>
     </form>
+
+
     <div style="line-height:50%;"><br></div>
     <a class="link" href="#whatsnext">&nbsp;Go to <i>What's next</i></a><br><br>
   </div>
